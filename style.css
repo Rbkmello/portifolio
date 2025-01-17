@@ -1,0 +1,505 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color:#82c7ff;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    margin: o auto;
+    background-image: url('assets/watercolor.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+
+.cabecalho {
+    position: sticky; /* Fixa na parte superior */
+    top: 1rem; /* Espaço inicial entre o topo e o cabeçalho */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 100%; /* Largura completa */
+    max-width: 1440px; /* Limita a largura máxima */
+    padding: 2rem; /* Espaçamento interno */
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça os itens no eixo horizontal */
+    z-index: 1000; /* Sobreposição acima de outros elementos */
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px;
+    transition: top 0.3s ease; /* Transição suave para o efeito */
+}
+
+/* Efeito de remoção do espaço superior ao rolar */
+.cabecalho.shrink {
+    top: 0; /* Quando rolar, o cabeçalho cola no topo */
+    padding: 2rem; /* Reduz o padding para economizar espaço */
+}
+
+.cabecalho__logo {
+    max-width: 100%; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+    background-color: tr;
+}
+
+.navegacao__elemento a {
+    font-size: 1.5rem;
+}
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao {
+    display: flex;
+    flex-direction: row; /* Adicionado ponto e vírgula aqui */
+    align-items: center;
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    margin: 1rem auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    gap: 50px;
+    margin: 1rem auto;
+    margin-top: 2rem;
+    }
+
+/* Estilo para o container da apresentação */
+.apresentacao__conteiner {
+    max-width: 800px; /* Largura máxima do container */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o título */
+.apresentacao__titulo {
+    font-size: 2em; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo para o subtítulo */
+.apresentacao__subtitulo {
+    font-size: 1.2em; /* Tamanho da fonte do subtítulo */
+    color: #666; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do subtítulo */
+}
+
+/* Estilo para a lista de redes sociais */
+.redes {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+/* Estilo para cada elemento da lista de redes sociais */
+.redes__elemento {
+    margin: 10px 0; /* Espaçamento entre os elementos */
+}
+
+/* Estilo para os links das redes sociais */
+.redes__elemento a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #007bff; /* Cor do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo para a imagem de perfil */
+.apresentacao__foto {
+    width: 300px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 40%; /* Faz a imagem ficar circular */
+    margin-top: 20px; /* Espaçamento acima da imagem */
+}
+                
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre-mim {
+    background-color: var(--cor-de-fundo-menu);
+    padding: 30px;
+    border-radius:10px;
+    box-shadow: var(--sombra-suave);
+    margin: 1rem auto;
+    max-width: 1440px;
+}
+
+.sobre-mim__titulo {
+    font-size: 2rem;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre-mim__texto {
+    font-size: 1.1rem;
+    color: var(--cor-subtexto);
+    text-align: justify;
+    line-height: 1.8;
+}
+.sobre-mim__assinatura{
+    width: 100px;
+    height: 50px;
+}
+/*------------------------------ Seção de Habilidades ------------------------------*/
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1440px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #343a40;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background: #e9ecef;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+li img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+li p {
+    font-size: 1rem;
+    color: #495057;
+    font-weight: bold;
+}
+
+/* seção formaçao */
+
+.formacao__lista {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.formacao__elemento {
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    margin-bottom: 20px; /* Espaçamento entre os elementos */
+}
+
+.formacao__card {
+    margin-bottom: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.formacao__icone {
+    display: block; /* Faz com que a imagem seja um bloco */
+    margin: 0 auto 10px; /* Centraliza a imagem e adiciona 10px de margem abaixo */
+    width: 80px; /* Ajuste a largura da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.formacao__info {
+    text-align: center; /* Centraliza o texto dentro da informação */
+}
+
+.formacao__nome {
+    font-size: 1.25rem; /* Tamanho da fonte do nome */
+    margin: 10px 0 5px; /* Margens para o nome */
+}
+
+.formacao__detalhe {
+    font-size: 0.9rem; /* Tamanho da fonte do detalhe */
+    color: #666; /* Cor do texto do detalhe */
+}
+
+/* seção de projetos */
+
+.projetos {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1440px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projetos__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.projetos__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projetos__card {
+    display: flex; /* Altera para flex para alinhar a imagem e o texto */
+    align-items: center; /* Alinha verticalmente */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projetos__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.projetos__imagem {
+    width: 450px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.projetos__info {
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.projetos__nome {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #444;
+}
+
+.projetos__descricao {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 10px 20px;
+}
+
+.projetos__botoes {
+    margin-top: 10px; /* Espaçamento acima dos botões */
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espaço entre os botões */
+}
+
+.projetos__botao {
+    flex: 1; /* Faz com que os botões ocupem o mesmo espaço */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px; /* Espaçamento entre os botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do botão Repositório */
+.repositorio {
+    background-color: white; /* Cor de fundo branca */
+    color: #007bff; /* Cor do texto azul */
+    border: 2px solid #007bff; /* Borda azul */
+}
+
+.repositorio:hover {
+    background-color: #007bff; /* Cor de fundo azul ao passar o mouse */
+    color: white; /* Texto branco ao passar o mouse */
+}
+
+/* Estilo do botão Ver Demo */
+.demo {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+}
+
+.demo:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* ------------------------------ Seção de Contato ---------------------------------*/
+.contato {
+    background-color: var(--cor-de-fundo-menu);
+    padding: 30px;
+    border-radius: var(--borda-radius);
+    box-shadow: var(--sombra-suave);
+    margin: 1rem auto;
+    max-width: 1440px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Adicionado ponto e vírgula aqui */
+    align-items: center;
+    
+    justify-content: space-between;
+}
+.contato__container {
+  display: flex; /* Transforma a div em um container flexbox */
+  justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+  align-items: center; /* Alinha os elementos verticalmente no centro */
+  display: flex;
+  flex-direction: row; /* Adicionado ponto e vírgula aqui */
+  align-items: center;
+  gap: 80px;
+}
+.contato__titulo {
+    font-size: 2rem;
+    color: var(--cor-texto);
+        text-align: center;
+}
+
+.contato__texto{
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+}
+
+.contato__imagem {
+    width: 300px;
+    margin-right: 30px;
+  }
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 650px;
+}
+
+.contato__campo {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--borda-radius);
+    font-size: 1rem;
+}
+
+.contato__campo--textarea {
+    height: 120px;
+}
+
+.contato__botao {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Alteração do cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s ease; /* Efeito de transição na mudança da cor de fundo */
+    border-radius: 5px; /* Bordas arredondadas */
+    max-width: 200px;
+}
+
+/* Estilo do botão quando o mouse está sobre ele (hover) */
+.contato__botao:hover {
+    background-color: #00c3ff; /* Cor de fundo azul mais clara */
+}
+
+/* Estilo do botão quando pressionado (active) */
+.contato__botao:active {
+    background-color: #0011ff; /* Cor de fundo ainda mais escura */
+}
+
+/* Estilo do botão quando focado (focus) */
+.contato__botao:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao redor do botão */
+}
+.status {
+    display: inline-block; /* Para que fique ao lado do botão */
+    margin-left: 10px; /* Espaçamento entre o botão e a mensagem */
+}
+
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--cor-de-fundo-menu);
+    color: #007bff;
+    margin: 1rem auto;
+    width: 1440px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}

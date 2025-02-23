@@ -1,6 +1,6 @@
 # Challenge ONE | Front End - Portfólio
 
-Este é um projeto de portfólio desenvolvido por mim como parte do **Alura Challenge**, com o objetivo de apresentar suas habilidades, formação acadêmica, hobbies, e projetos realizados na área de tecnologia.
+Este é um projeto de portfólio desenvolvido por mim como parte do **Alura Challenge**, com o objetivo de apresentar minhas habilidades, formação acadêmica, hobbies, e projetos realizados na área de tecnologia.
 
 ## 🌐 Tecnologias Utilizadas
 
@@ -31,7 +31,7 @@ Ver Demo
 Contribuições são bem-vindas! Se você deseja sugerir melhorias ou reportar problemas, fique à vontade para abrir uma issue ou enviar um pull request.
 
 ## 📬 Contato
-GitHub: Rbkmello
-LinkedIn: Rebecca Mello
+GitHub: [Rbkmello](https://github.com/Rbkmello)
+LinkedIn: [Rebecca Mello](https://www.linkedin.com/in/rebeccabmello/)
 Email: rebeccabmello@gmail.com
 ##### Desenvolvido por Rebecca Mello - 2025

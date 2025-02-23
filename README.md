@@ -23,7 +23,7 @@ Este é um projeto de portfólio desenvolvido por mim como parte do **Alura Chal
 
 ## 🖼️ Demonstração
 Você pode acessar uma demonstração deste projeto através do seguinte link:
-rbkmello.github.io/portifolio/
+[rbkmello.github.io/portifolio/](https://rbkmello.github.io/portifolio/)
 
 
 ## 🤝 Contribuição
